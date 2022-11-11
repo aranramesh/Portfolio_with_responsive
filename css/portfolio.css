@@ -521,3 +521,106 @@ header.sticky{
     letter-spacing: 1px;
 
 }
+@media (max-width: 1200px){
+    header{
+        padding: 16px 3%;
+        transition: .3s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .3s;
+    }
+    section{
+        padding: 70px 3%;
+        transition: .3s;
+
+    }
+    .contact{
+        width: 95%;
+        transition: .3s;
+    }
+    :root{
+        --big-font:2rem;
+        --h2-font:1.3rem;
+        --p-font:1rem;
+    }
+}
+@media (max-width: 1024px){
+    #menu-icon{
+        display: block;
+
+    }
+    .home{
+        min-height:80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--main-color);
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .navlist a {
+        display: block;
+        padding: 1.2rem;
+        margin: 1rem;
+        border-right:  2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        background: var(--bg-color);
+        color: var(--main-color);
+    }
+    .navlist a::after{
+        display: none;
+        
+    }
+    .navlist.active{
+        top: 100%;
+
+    }
+    .contact{
+        width: 90%;
+        margin: auto;
+    }
+
+}
+@media (max-width: 768px){
+    .home{
+        grid-template-columns: 1fr;
+        min-height: 130vh;
+        gap: 1rem;
+
+    }
+    .home-text{
+        padding-top: 50px;
+    }
+    .home-img{
+        text-align: center;
+    }
+    .home-img img{
+        width: 440px;
+        height: auto;
+    }
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    section{
+        padding: 65% 3%;
+        transition: .3s;
+    }
+
+}
+@media (max-width: 425px){
+    .contact .action form input[type="email"]{
+        width: 310px;
+    }
+}
